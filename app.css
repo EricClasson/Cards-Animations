@@ -1,0 +1,173 @@
+:root {
+    --card-spacing: 35px;
+    --base-rotate: -45deg;
+    --rotate-increment: 10deg;
+    --box-shadew: 0 0 10px black;
+    --transition-delay: 0.2s;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kortlekar {
+    width: 15rem;
+    height: 20rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: beige;
+    transition: all 0.5s ease;
+}
+
+.card {
+    background-color: aqua;
+    width: 15rem;
+    height: 20rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in;
+
+}
+
+/* Korten */
+
+.card:nth-child(1) {
+    box-shadow: var(--box-shadew);
+    background-color: pink;
+    z-index: 10;
+
+
+
+}
+
+.card:nth-child(2) {
+    box-shadow: var(--box-shadew);
+    background-color: blueviolet;
+    z-index: 9;
+
+
+}
+
+.card:nth-child(3) {
+    box-shadow: var(--box-shadew);
+    background-color: blue;
+    z-index: 8;
+}
+
+.card:nth-child(4) {
+    box-shadow: var(--box-shadew);
+    background-color: lightblue;
+    z-index: 7;
+}
+
+.card:nth-child(5) {
+    box-shadow: var(--box-shadew);
+    background-color: green;
+    z-index: 6;
+}
+
+.card:nth-child(6) {
+    box-shadow: var(--box-shadew);
+    background-color: lightgreen;
+    z-index: 5;
+}
+
+.card:nth-child(7) {
+    box-shadow: var(--box-shadew);
+    background-color: yellow;
+    z-index: 4;
+}
+
+.card:nth-child(8) {
+    box-shadow: var(--box-shadew);
+    background-color: orange;
+    z-index: 3;
+}
+
+.card:nth-child(9) {
+    box-shadow: var(--box-shadew);
+    background-color: red;
+    z-index: 2;
+}
+
+.kortlekar:hover .card:nth-child(1) {
+    transform: rotate(var(--base-rotate));
+
+}
+
+.kortlekar:hover .card:nth-child(1) h3 {
+    display: none;
+
+}
+
+.kortlekar:hover .card:nth-child(2) {
+    transform: rotate(calc(var(--base-rotate) + var(--rotate-increment)));
+    left: var(--card-spacing);
+    transition-delay: var(--transition-delay);
+
+}
+
+.kortlekar:hover .card:nth-child(3) {
+    transform: rotate(calc(var(--base-rotate) + var(--rotate-increment)*2));
+    left: calc(var(--card-spacing)*2);
+    transition-delay: var(--transition-delay);
+
+}
+
+.kortlekar:hover .card:nth-child(4) {
+    transform: rotate(calc(var(--base-rotate) + var(--rotate-increment)*3));
+    left: calc(var(--card-spacing)*3);
+    transition-delay: var(--transition-delay);
+
+}
+
+.kortlekar:hover .card:nth-child(5) {
+    transform: rotate(calc(var(--base-rotate) + var(--rotate-increment)*4));
+    left: calc(var(--card-spacing)*4);
+    transition-delay: var(--transition-delay);
+
+}
+
+.kortlekar:hover .card:nth-child(6) {
+    transform: rotate(calc(var(--base-rotate) + var(--rotate-increment)*5));
+    left: calc(var(--card-spacing)*5);
+    transition-delay: var(--transition-delay);
+
+}
+
+.kortlekar:hover .card:nth-child(7) {
+    transform: rotate(calc(var(--base-rotate) + var(--rotate-increment)*6));
+    left: calc(var(--card-spacing)*6);
+    transition-delay: var(--transition-delay);
+
+}
+
+.kortlekar:hover .card:nth-child(8) {
+    transform: rotate(calc(var(--base-rotate) + var(--rotate-increment)*7));
+    left: calc(var(--card-spacing)*7);
+    transition-delay: var(--transition-delay);
+
+}
+
+.kortlekar:hover .card:nth-child(9) {
+    transform: rotate(calc(var(--base-rotate) + var(--rotate-increment)*8));
+    left: calc(var(--card-spacing)*8);
+    transition-delay: var(--transition-delay);
+
+}
